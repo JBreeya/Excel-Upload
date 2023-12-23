@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel File Upload and Display</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../Excel Upload/src/css/bootstrap.min.css">
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="../Excel Upload/src/css/jquery.dataTables.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="../Excel Upload/src/css/all.min.css">
+    <!-- My Styles -->
+    <link rel="stylesheet" href="../Excel Upload/src/css/styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Upload Excel File
+                    </div>
+                    <div class="card-body">
+                        <input type="file" id="fileInput" class="form-control mb-2">
+                        <div class="center-btn">
+                        <button class="btn" onclick="readExcel()">Upload and Display</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-md-8 mx-auto">
+            <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4 d-flex justify-content-center table-responsive">
+                <table id="dataTable" class="table table-bordered">
+                    <!-- Table content will be dynamically generated here -->
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="../Excel Upload/src/js/popper.min.js"></script>
+    <script src="../Excel Upload/src/js/bootstrap.min.js"></script>
+    <!-- jQuery -->
+    <script src="../Excel Upload/src/js/jquery-3.6.0.min.js"></script>
+    <!-- DataTables JS -->
+    <script src="../Excel Upload/src/js/jquery.dataTables.min.js"></script>
+    <!-- XLSX.js -->
+    <script src="../Excel Upload/src/js/xlsx.full.min.js"></script>
+    <!-- My Scripts -->
+    <script src="../Excel Upload/src/js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+body {
+  background-color: #f8f9fa;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ffffff49;
+  box-shadow: 1px 1px 15px #ef403d42;
+  padding: 20px;
+  border-radius: 10px;
+  width: 500px;
+}
+
+#dataTable_wrapper {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+#dataTable {
+  width: 100%;
+  white-space: nowrap; 
+  overflow-x: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0;
+  padding: 10px;
+}
+
+#dataTable th,
+#dataTable td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #dee2e6;
+  width: 150px; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#dataTable_filter input {
+  margin: 10px;
+}
+
+#dataTable thead th {
+  background-color: #cf2422;
+  color: #ffffff;
+  border-color: #050505;
+  font-weight: bold;
+  margin: 10px;
+}
+
+#dataTable tbody tr:hover {
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease;
+}
+
+#dataTable tbody td {
+  border-color: #dee2e6;
+}
+
+.center-btn {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+
+.btn {
+  background-color: #cf2422;
+  color: #ffffff;
+  border: 1px solid #adacac;
+}
+
+.btn:hover {
+  background-color: #050505;
+  color: #ffffff;
+}
+
